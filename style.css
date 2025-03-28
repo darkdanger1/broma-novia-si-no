@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #e2c3c5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.heart {
+    font-size: 60px;
+    color: red;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+/* ✅ Mejora en la distribución de los botones */
+.buttons {
+    display: flex;
+    justify-content: center; /* Centra los botones */
+    align-items: center;
+    width: 100%;
+    gap: 20px; /* Espacio uniforme entre los botones */
+    margin-top: 15px;
+}
+
+#yesButton, #noButton {
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 120px; /* Ambos botones tienen el mismo tamaño */
+    text-align: center;
+}
+
+#yesButton {
+    background-color: green;
+    color: white;
+}
+
+#noButton {
+    background-color: red;
+    color: white;
+    position: relative; /* Permite que el botón "No" se mueva */
+}
+
+

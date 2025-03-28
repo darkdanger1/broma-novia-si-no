@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta Interactiva</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Título -->
+        <h2 id="title">Hola! Da click!</h2>
+
+        <!-- ✅ Nueva imagen (GIF "Cat Hugs Meme") entre el título y el corazón -->
+        <div id="gifIntro" class="tenor-gif-embed" data-postid="2102180158396711286" data-share-method="host" data-aspect-ratio="1" data-width="100%">
+            <a href="https://tenor.com/view/cat-hugs-rose-roses-flower-gif-2102180158396711286">Cat Hugs Meme</a> from
+            <a href="https://tenor.com/search/cat-memes">Cat Memes</a>
+        </div>
+        <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+        <!-- Corazón inicial que abre la carta -->
+        <button id="opencard" class="heart">&#10084;</button>
+        
+         <!-- Carta con animación -->
+        <div id="card" class="hidden">
+            <h2>¿Te gustaría ser mi novia?</h2>
+            
+            <!-- GIF para la pregunta -->
+            <div class="tenor-gif-embed" data-postid="17266900336609124174" data-share-method="host" data-aspect-ratio="1.07519" data-width="100%">
+                <a href="https://tenor.com/view/kitty-kitty-heart-kitty-love-kitty-hug-cat-gif-17266900336609124174">Kitty Kitty Heart Sticker</a> from
+                <a href="https://tenor.com/search/kitty-stickers">Kitty Stickers</a>
+            </div>
+            <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+            <div class="buttons">
+                <button id="yesButton">Sí</button>
+                <button id="noButton">No</button>
+            </div>
+        </div>
+
+        <div id="successMessage" class="hidden">
+            <h2>Aww, sabía que dirías que sí, beshito uwu ❤️.</h2>
+
+            <!-- ✅ GIF "Cat Kiss" que reemplaza el anterior -->
+            <div class="tenor-gif-embed" data-postid="25376137" data-share-method="host" data-aspect-ratio="1.06667" data-width="100%">
+                <a href="https://tenor.com/view/cat-kiss-gif-25376137">Cat Kiss GIF</a> from
+                <a href="https://tenor.com/search/cat-gifs">Cat GIFs</a>
+            </div>
+            <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
